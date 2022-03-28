@@ -39,4 +39,5 @@ module.exports = {
   ...config,
   // basePath: '/testing_b',
   // assetPrefix: '.'
+  webpack5: false,
 }
