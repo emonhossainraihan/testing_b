@@ -44,4 +44,7 @@ module.exports = withTM({
   ...config,
   // basePath: '/testing_b',
   // assetPrefix: '.'
+  experimental: {
+		esmExternals: "loose",
+	},
 })
