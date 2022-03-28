@@ -1,0 +1,6 @@
+- name: Test Lesson
+  slug: test-lesson
+  description: testing to add lesson work or not?
+  lessons:
+    - test-mine-1
+    - test-mine-2

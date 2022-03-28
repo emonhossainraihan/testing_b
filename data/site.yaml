@@ -1,0 +1,8 @@
+# site variables
+
+title: Decompose
+description: Mathematics with a distinct visual perspective. Linear algebra, calculus, neural networks, topology, and more.
+# needed at util/transformSrc
+location: emonhossainraihan.github.io
+
+disqus: 3blue1brown
