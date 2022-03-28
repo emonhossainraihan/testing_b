@@ -1,6 +1,11 @@
 const withImages = require("next-images");
 const withYAML = require("next-yaml");
 //const { withSentryConfig } = require("@sentry/nextjs");
+const withTM = require("next-transpile-modules")(["next-mdx-remote"])
+
+// module.exports = withTM({
+//   // ...further Next.js config
+// })
 
 let config = {
   target: "serverless",
@@ -35,9 +40,8 @@ config = withImages(config);
 config = withYAML(config);
 
 // remove basePath and assetPrefix for local dev
-module.exports = {
+module.exports = withTM({
   ...config,
   // basePath: '/testing_b',
   // assetPrefix: '.'
-  webpack5: false,
-}
+})
